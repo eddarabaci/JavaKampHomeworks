@@ -16,7 +16,7 @@ public class Main {
 		customer.setId(1);
 		customer.setFirstName("Eda");
 		customer.setLastName("Arabacı");
-		customer.setDateOfBirth(1992);
+		customer.setDateOfBirth(1111);
 		customer.setNationalId("11111111");
 		
 		
