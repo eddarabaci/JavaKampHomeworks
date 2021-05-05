@@ -16,6 +16,7 @@ KPSPublicSoapProxy kpsPublic = new KPSPublicSoapProxy();
 							customer.getFirstName().toUpperCase(), 
 							customer.getLastName().toUpperCase(), 
 							customer.getDateOfBirth());
+			return true;
 			
 		} 
 		catch (NumberFormatException exception) {
