@@ -12,11 +12,10 @@ public class MernisServiceAdapter implements CustomerCheckService {
 KPSPublicSoapProxy kpsPublic = new KPSPublicSoapProxy();
 		
 		try {
-			kpsPublic.TCKimlikNoDogrula(Long.parseLong(customer.getNationalId()), 
+			return kpsPublic.TCKimlikNoDogrula(Long.parseLong(customer.getNationalId()), 
 							customer.getFirstName().toUpperCase(), 
 							customer.getLastName().toUpperCase(), 
 							customer.getDateOfBirth());
-			return true;
 			
 		} 
 		catch (NumberFormatException exception) {
